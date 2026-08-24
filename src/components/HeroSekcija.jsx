@@ -14,8 +14,10 @@ const HeroSekcija = ({ naslov, opis, dugme1, dugme2, slika }) => {
               dangerouslySetInnerHTML={{ __html: naslov }}
             ></h1>
             <p>{opis}</p>
-            <button>{dugme1}</button>
-            <button className="hero-dugme-link">{dugme2}</button>
+            <div className="hero-dugmad">
+              <button>{dugme1}</button>
+              <button className="hero-dugme-link">{dugme2}</button>
+            </div>
           </div>
           <div className="kolona2">
             <img className="hero-slika" src={slika} alt="" />
@@ -23,7 +25,6 @@ const HeroSekcija = ({ naslov, opis, dugme1, dugme2, slika }) => {
         </div>
         <AppointmentForm />
       </section>
-      
     </>
   );
 };
