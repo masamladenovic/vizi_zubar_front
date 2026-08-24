@@ -2,32 +2,46 @@
   background-image: url("../../../public/images/hero-pozadina.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 5% 10%;
+
+  padding: 5% 0 0;
+
+  min-height: 100vh;
 }
 
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.kolona1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 4rem 10% 2rem;
 }
 
 .kolona2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 
 .hero-slika {
-  width: 80%;
+  width: 100%;
   height: auto;
   object-fit: cover;
+  display: block;
 }
 
-.hero-naslov{
-  font-size: 2.5rem;
+.hero-naslov {
+  font-size: 2rem;
+  margin-top: 1rem;
 }
 
 .hero-naslov span {
@@ -38,15 +52,26 @@
   color: var(--secondary-color);
   background-color: transparent;
   text-decoration: underline;
+  margin: 0;
 }
 
+
+/* DESKTOP */
 @media (min-width: 768px) {
+
+  .hero {
+    padding: 5% 10%;
+    max-height: 100vh;
+    min-height: unset;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr 1fr;
+    height: 100vh;
     text-align: justify !important;
   }
 
-  .hero-naslov{
+  .hero-naslov {
     text-align: left !important;
   }
 
@@ -56,6 +81,7 @@
     align-items: center;
     justify-content: center;
     text-align: justify !important;
+    padding: 0;
   }
 
   .kolona2 {
@@ -64,8 +90,8 @@
   }
 
   .hero-slika {
-    height: auto;
     width: 80%;
+    height: auto;
     object-fit: cover;
   }
 }

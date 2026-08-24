@@ -1,6 +1,6 @@
 :root {
   --primary-color: #1d40ff;
-  --secondary-color: #0c1f41;
+  --secondary-color: #1c2a53;
   --background-color: #f0f0f0;
   --text-color: #949398;
 }
@@ -22,9 +22,9 @@ h1,h2,h3,h4,h5,h6{
 button{
   background-color: var(--primary-color);
   color: white;
-  padding: 10px 20px;
+  padding: 16px 24px;
   cursor: pointer;
   border: none;
-  border-radius: 15px;
-  margin: 5px;
+  border-radius: 20px;
+  margin: 10px;
 }
