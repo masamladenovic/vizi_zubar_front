@@ -2,6 +2,7 @@ import React from "react";
 import HeroSekcija from "../components/HeroSekcija";
 import AboutUsSection from "../components/AboutUsSection";
 import Traka from "../components/Traka";
+import OurServices from "../components/OurServices";
 
 const Pocetna = () => {
   return (
@@ -16,6 +17,8 @@ const Pocetna = () => {
         slika={"../../images/hero-doktorka.png"}
       />
       <AboutUsSection />
+      <Traka />
+      <OurServices />
       <Traka />
     </>
   );
