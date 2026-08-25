@@ -5,21 +5,47 @@
   --text-color: #949398;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-p, li{
+p,
+li {
   color: var(--text-color);
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--secondary-color);
 }
 
-button{
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.title span {
+  color: var(--primary-color);
+}
+
+button {
   background-color: var(--primary-color);
   color: white;
   padding: 16px 24px;

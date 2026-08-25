@@ -3,6 +3,7 @@ import HeroSekcija from "../components/HeroSekcija";
 import AboutUsSection from "../components/AboutUsSection";
 import Traka from "../components/Traka";
 import OurServices from "../components/OurServices";
+import WhyChooseUsSection from "../components/WhyChooseUsSection";
 
 const Pocetna = () => {
   return (
@@ -20,6 +21,7 @@ const Pocetna = () => {
       <Traka />
       <OurServices />
       <Traka />
+      <WhyChooseUsSection/>
     </>
   );
 };

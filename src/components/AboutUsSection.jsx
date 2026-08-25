@@ -9,9 +9,9 @@ const AboutUsSection = () => {
           <img src="../../../images/about-us.png" alt="" />
         </div>
         <div className="about-text">
-          <p className="about-subtitle">ABOUT US</p>
-          <h2>
-            <span className="highlight">15 Years of Expertise</span> in Dental
+          <p className="subtitle">ABOUT US</p>
+          <h2 className="title">
+            <span>15 Years of Expertise</span> in Dental
             Care
           </h2>
           <p className="about-description">

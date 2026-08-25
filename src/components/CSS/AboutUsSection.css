@@ -17,24 +17,10 @@
   height: auto;
 }
 
-.about-subtitle{
-  font-size: 0.9rem;
-  color: var(--secondary-color);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-}
-
 .about-text h2{
   font-size: 2rem;
   color: var(--secondary-color);
   margin-bottom: 1rem;
-}
-
-.highlight{
-  color: var(--primary-color);
-  font-weight: bold;
 }
 
 .about-list{
