@@ -4,6 +4,7 @@ import AboutUsSection from "../components/AboutUsSection";
 import Traka from "../components/Traka";
 import OurServices from "../components/OurServices";
 import WhyChooseUsSection from "../components/WhyChooseUsSection";
+import CaseStoriesSection from "../components/CaseStoriesSection";
 
 const Pocetna = () => {
   return (
@@ -22,6 +23,7 @@ const Pocetna = () => {
       <OurServices />
       <Traka />
       <WhyChooseUsSection/>
+      <CaseStoriesSection/>
     </>
   );
 };
