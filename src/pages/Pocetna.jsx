@@ -6,6 +6,9 @@ import OurServices from "../components/OurServices";
 import WhyChooseUsSection from "../components/WhyChooseUsSection";
 import CaseStoriesSection from "../components/CaseStoriesSection";
 import HowItWorksSection from "../components/HowItWorksSection";
+import ZakazivanjeForma from "../components/ZakazivanjeForma";
+import FAQ from "../components/FAQ";
+import Newsletter from "../components/Newsletter";
 
 const Pocetna = () => {
   return (
@@ -27,6 +30,10 @@ const Pocetna = () => {
       <CaseStoriesSection/>
       <HowItWorksSection/>
       <Traka/>
+      <ZakazivanjeForma/>
+      <Traka/>
+      <FAQ/>
+      <Newsletter/>
     </>
   );
 };
