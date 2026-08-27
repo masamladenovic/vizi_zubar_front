@@ -140,6 +140,7 @@
   position: absolute;
   left: 22px;
   top: 22px;
+  color: var(--primary-color);
 }
 
 .stars {

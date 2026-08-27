@@ -1,0 +1,199 @@
+.zubar-card {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+  /* Border je inicijalno providan */
+  border-bottom: 4px solid transparent;
+
+  transition: 0.3s ease;
+}
+
+/* Hover efekat cele kartice */
+.zubar-card:hover {
+  border-bottom: 4px solid var(--primary-color);
+  transform: translateY(-3px);
+}
+
+
+/* SLIKA */
+
+.zubar-slika {
+  width: 100%;
+  height: 420px;
+  position: relative;
+  overflow: hidden;
+}
+
+.zubar-slika img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+
+  transition: 0.4s ease;
+}
+
+
+/* Malo zumiranje slike na hover */
+
+.zubar-card:hover .zubar-slika img {
+  transform: scale(1.03);
+}
+
+
+/* GRADIENT PREKO DONJEG DELA SLIKE */
+
+.zubar-slika::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 45%;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.45),
+    transparent
+  );
+
+  opacity: 0;
+
+  transition: 0.3s ease;
+}
+
+.zubar-card:hover .zubar-slika::after {
+  opacity: 1;
+}
+
+
+/* SOCIAL ICONS */
+
+.social-icons {
+  position: absolute;
+
+  /* Nalaze se preko donjeg dela slike */
+  top: 350px;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  /* Sakrivene dok nije hover */
+  opacity: 0;
+  transform: translateY(10px);
+
+  transition: 0.3s ease;
+
+  z-index: 2;
+}
+
+
+/* Prikaži ikonice na hover */
+
+.zubar-card:hover .social-icons {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Krug oko ikonice */
+
+.social-icons a {
+  width: 42px;
+  height: 42px;
+
+  border: 2px solid white;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  text-decoration: none;
+
+  font-size: 17px;
+
+  transition: 0.3s ease;
+}
+
+
+/* Hover same ikonice */
+
+.social-icons a:hover {
+  background-color: white;
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+
+/* INFORMACIJE */
+
+.zubar-info {
+  padding: 20px 22px 22px;
+  text-align: left;
+}
+
+.zubar-info h3 {
+  margin: 0 0 8px;
+
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  color: var(--secondary-color);
+}
+
+.zubar-info p {
+  margin: 0;
+
+  font-size: 0.95rem;
+
+  color: var(--text-color);
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .zubar-slika {
+    height: 260px;
+  }
+
+  .social-icons {
+    top: 190px;
+  }
+
+  .social-icons a {
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+  }
+}
+
+
+/* TELEFON */
+
+@media (max-width: 600px) {
+  .zubar-slika {
+    height: 300px;
+  }
+
+  .social-icons {
+    top: 230px;
+  }
+
+  .zubar-info {
+    padding: 18px 20px 20px;
+  }
+}

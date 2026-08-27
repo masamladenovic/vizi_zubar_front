@@ -1,0 +1,97 @@
+.zubar-section {
+  background-color: #faf7f8;
+  padding: 5rem 5%;
+  text-align: center;
+}
+
+
+/* MALI NASLOV */
+
+.zubar-section .subtitle {
+  margin: 0 0 15px;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  letter-spacing: 5px;
+
+  color: var(--secondary-color);
+}
+
+
+/* GLAVNI NASLOV */
+
+.zubar-section .title {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  font-size: 2.8rem;
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  color: var(--secondary-color);
+}
+
+.zubar-section .title span {
+  color: var(--primary-color);
+}
+
+
+/* GRID */
+
+.zubar-grid {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 3.5rem auto 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 2rem;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .zubar-section {
+    padding: 4rem 3%;
+  }
+
+  .zubar-section .title {
+    font-size: 2.3rem;
+  }
+
+  .zubar-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+
+/* TELEFON */
+
+@media (max-width: 600px) {
+  .zubar-section {
+    padding: 3.5rem 1rem;
+  }
+
+  .zubar-section .subtitle {
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+  }
+
+  .zubar-section .title {
+    font-size: 2rem;
+  }
+
+  .zubar-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-top: 2.5rem;
+  }
+}

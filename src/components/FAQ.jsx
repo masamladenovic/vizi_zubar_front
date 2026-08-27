@@ -1,9 +1,8 @@
-
 import { useState } from "react";
 import { FaPlus, FaMinus, FaComments, FaPhoneAlt } from "react-icons/fa";
 import "./CSS/FAQ.css";
 
-const FAQ = () => {
+const FAQ = ({ boja }) => {
   const [activeIndex, setActiveIndex] = useState(1);
 
   const faqData = [
@@ -44,7 +43,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="faq-section">
+    <section className={`faq-section ${boja ? boja : ""}`}>
       <div className="faq-heading">
         <p className="subtitle">FAQS</p>
 
@@ -56,14 +55,11 @@ const FAQ = () => {
       </div>
 
       <div className="faq-content">
-
         {/* LEVA STRANA - PITANJA */}
         <div className="faq-list">
           {faqData.map((faq, index) => (
             <div
-              className={`faq-item ${
-                activeIndex === index ? "active" : ""
-              }`}
+              className={`faq-item ${activeIndex === index ? "active" : ""}`}
               key={index}
             >
               <button
@@ -88,7 +84,6 @@ const FAQ = () => {
 
         {/* DESNA STRANA */}
         <div className="faq-sidebar">
-
           <div className="faq-contact-card">
             <div className="faq-contact-icon">
               <FaComments />
@@ -102,9 +97,7 @@ const FAQ = () => {
               We ensure a quick response.
             </p>
 
-            <button className="faq-contact-button">
-              Contact Us
-            </button>
+            <button className="faq-contact-button">Contact Us</button>
           </div>
 
           <div className="faq-emergency-card">
@@ -113,18 +106,13 @@ const FAQ = () => {
             </div>
 
             <div>
-              <p className="faq-priority">
-                Your Smile, Our Priority
-              </p>
+              <p className="faq-priority">Your Smile, Our Priority</p>
 
               <h3>24/7 Emergency</h3>
 
-              <p className="faq-phone-number">
-                (000) 000-0000
-              </p>
+              <p className="faq-phone-number">(000) 000-0000</p>
             </div>
           </div>
-
         </div>
       </div>
     </section>

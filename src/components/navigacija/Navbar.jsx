@@ -1,5 +1,5 @@
-import "./Navbar.css"
-import {Link} from "react-router-dom"
+import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -11,9 +11,15 @@ const Navbar = () => {
         <li>
           <Link to="/services">Services</Link>
         </li>
+        <li>
+          <Link to="/about">About Us</Link>
+        </li>
+        <li>
+          <Link to="/dentists">Dentists</Link>
+        </li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar 
+export default Navbar;
