@@ -7,8 +7,34 @@
   padding: 5% 10%;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
+.hero-ostale-stranice title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
 
+.breadcrumbs{
+  color: var(--text-color);
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.breadcrumbs a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.breadcrumbs a:hover{
+  text-decoration: underline;
+}
+
+.breadcrumb span{
+  margin-right: 0.3rem;
+}
