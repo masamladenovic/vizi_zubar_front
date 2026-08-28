@@ -5,6 +5,8 @@ const routes = [
   { path: "/about", breadcrumb: "About Us" },
   { path: "/dentists", breadcrumb: "Dentists" },
   { path: "/services", breadcrumb: "Services" },
+  { path: "/register", breadcrumb: "Register" },
+  { path: "/login", breadcrumb: "Login" },
 ];
 
 export const Breadcrumbs = () => {

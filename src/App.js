@@ -6,6 +6,8 @@ import Navbar from "./components/navigacija/Navbar";
 import AboutUs from "./pages/AboutUs";
 import Dentists from "./pages/Dentists";
 import NotFound from "./pages/NotFound";
+import RegisterPage from "./pages/RegisterPage";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/dentists" element={<Dentists />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/login" element={<LoginPage />} />
 
 
 
